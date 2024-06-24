@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#000000">
+  <link rel="apple-touch-icon" href="/images/logo1.png">
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Chat</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="topic">MI CHAT ;)</h1>
+    <form id="chatForm">
+      <div class="form-group">
+        <h3>¿Quién está escribiendo?</h3>
+        <input type="text" id="user" class="form-control" placeholder="Usuario" required>
+      </div><br>
+      <div class="form-group">
+        <h3>¿Cuál es tu mensaje?</h3>
+        <input type="text" id="message" class="form-control" placeholder="Mensaje" required>
+      </div>
+      <button type="submit">ENVIAR MENSAJE</button>
+    </form>
+    <div id="chatBox">
+    </div>
+  </div>
+  <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+          console.log('Service Worker registrado con éxito:', registration);
+        }).catch((error) => {
+          console.log('Registro de Service Worker fallido:', error);
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>

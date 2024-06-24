@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    margin-top: 30px;
+    background-color: #ffcad4;
+}
+.topic{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    color: #9d8189;
+}
+#chatForm{
+    width: 50%; 
+    height: auto;
+    background-color: #f4acb7;
+    margin: auto;
+    margin-top: 30px;
+    border-style:double;
+    border-color: #9d8189;
+    border-width: 13px;
+    border-radius: 5px; 
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: small; 
+}
+button{
+    background-color: #ff8fab;
+    padding: 8px;
+    margin: 15px;
+    margin-bottom: 0px;
+    border-radius: 30px;
+    border-color: #ff8fab;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #ffe5d9;
+    border-color: #ffe5d9;
+  }
+input{
+    background-color: #d8e2dc;
+    padding: 4px;
+    border-radius: 3px;
+    border-color: #d8e2dc;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+
+}
+input::placeholder{
+    font-style: italic;
+}   
+#user{
+    width: 30%;
+}
+#message{
+    width: 100%;
+}
+#chatBox{
+    width: 50%; 
+    height: auto;
+    background-color: #f4acb7;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-style:double;
+    border-color: #9d8189;
+    border-width: 13px;
+    border-radius: 5px; 
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
